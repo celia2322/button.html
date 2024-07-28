@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download a File</title>
+  <title>Open Anki</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <style>
     :root {
@@ -241,11 +241,11 @@
   </style>
 </head>
 <body>
-  <button class="btn mid mint rounded threeD" type="button" onclick="openFile()">Mes Fichiers</button>
+  <button class="btn mid mint rounded threeD" type="button" onclick="openApplication()">Anki</button>
 
   <script>
-    function openFile() {
-      window.open('file:///Macintosh HD/Utilisateurs/Célia/Téléchargements/', '_blank').focus();
+    function openApplication() {
+      window.location.href = 'file:///Users/Celia/Desktop/MyAutomatorApp.app';
     }
   </script>
 </body>
