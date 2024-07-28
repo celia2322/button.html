@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download a File</title>
+</head>
+<body>
+  <!-- Link to download a file -->
+  <a href="file:///Users/Celia/Downloads/" download>Download the file</a>
 
+  <!-- Button to open a file in a new window -->
+  <button onclick="openFile()">Open the file</button>
 <head>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -45,7 +55,7 @@
 
     .btn {
       text-align: center;
-      color: #ffffff;
+      color: #000000;
       font-family: 'Manrope';
       display: inline-block;
       margin: 10px;
@@ -244,11 +254,11 @@
 
 <body>
 
-  <button class="btn large mint rounded threeD" type="button" onclick="ouvrirFichier()"> Mes Fichiers 
+  <button class="btn large mint rounded threeD" type="button" onclick="openFiles ()"> Mes Fichiers 
   
-  <script>
-    function ouvrirFichier() {
-      window.open('file:///C://Users/Celia/Downloads/).focus();
+ <script>
+    function openFile() {
+      window.open('file:///Users/Celia/Downloads/').focus();
     }
   </script>
 
